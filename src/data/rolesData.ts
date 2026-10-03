@@ -1,0 +1,98 @@
+import { TargetRole } from '../types';
+
+export const TARGET_ROLES: TargetRole[] = [
+  {
+    id: 'backend-engineer',
+    title: 'Software Engineer (Backend)',
+    description: 'Specializes in scalable server-side systems, relational databases, distributed architectures, and robust API endpoints.',
+    marketDemand: 'Crucial',
+    requiredSkills: [
+      { skillId: 'python', targetMastery: 80, importance: 'critical' },
+      { skillId: 'oop', targetMastery: 75, importance: 'critical' },
+      { skillId: 'data-structures', targetMastery: 75, importance: 'critical' },
+      { skillId: 'sql', targetMastery: 80, importance: 'critical' },
+      { skillId: 'databases', targetMastery: 80, importance: 'critical' },
+      { skillId: 'rest-apis', targetMastery: 85, importance: 'critical' },
+      { skillId: 'git', targetMastery: 75, importance: 'important' },
+      { skillId: 'linux', targetMastery: 75, importance: 'important' },
+      { skillId: 'testing', targetMastery: 75, importance: 'important' },
+      { skillId: 'system-design', targetMastery: 70, importance: 'critical' },
+      { skillId: 'trees', targetMastery: 65, importance: 'important' },
+      { skillId: 'graphs', targetMastery: 60, importance: 'nice-to-have' },
+    ],
+  },
+  {
+    id: 'fullstack-developer',
+    title: 'Full Stack Developer',
+    description: 'Builds end-to-end web applications with modern frontend reactive UIs, Node.js or Python backend servers, and database integration.',
+    marketDemand: 'Very High',
+    requiredSkills: [
+      { skillId: 'javascript', targetMastery: 85, importance: 'critical' },
+      { skillId: 'react', targetMastery: 85, importance: 'critical' },
+      { skillId: 'nodejs', targetMastery: 80, importance: 'critical' },
+      { skillId: 'rest-apis', targetMastery: 80, importance: 'critical' },
+      { skillId: 'sql', targetMastery: 75, importance: 'important' },
+      { skillId: 'databases', targetMastery: 70, importance: 'important' },
+      { skillId: 'git', targetMastery: 75, importance: 'important' },
+      { skillId: 'testing', targetMastery: 70, importance: 'important' },
+      { skillId: 'data-structures', targetMastery: 65, importance: 'important' },
+      { skillId: 'arrays', targetMastery: 70, importance: 'important' },
+    ],
+  },
+  {
+    id: 'algorithms-engineer',
+    title: 'Algorithms & Systems Engineer',
+    description: 'Focuses on competitive programming, algorithmic complexity, performance-critical computational kernels, and systems architecture.',
+    marketDemand: 'High',
+    requiredSkills: [
+      { skillId: 'cpp', targetMastery: 85, importance: 'critical' },
+      { skillId: 'data-structures', targetMastery: 90, importance: 'critical' },
+      { skillId: 'arrays', targetMastery: 90, importance: 'critical' },
+      { skillId: 'linked-lists', targetMastery: 85, importance: 'critical' },
+      { skillId: 'stacks', targetMastery: 85, importance: 'critical' },
+      { skillId: 'queues', targetMastery: 85, importance: 'critical' },
+      { skillId: 'recursion', targetMastery: 85, importance: 'critical' },
+      { skillId: 'trees', targetMastery: 85, importance: 'critical' },
+      { skillId: 'graphs', targetMastery: 80, importance: 'critical' },
+      { skillId: 'searching', targetMastery: 85, importance: 'critical' },
+      { skillId: 'sorting', targetMastery: 85, importance: 'critical' },
+      { skillId: 'dynamic-programming', targetMastery: 80, importance: 'critical' },
+      { skillId: 'linux', targetMastery: 70, importance: 'important' },
+    ],
+  },
+  {
+    id: 'frontend-engineer',
+    title: 'Frontend Specialist',
+    description: 'Designs reactive web interfaces, state machines, component architecture, client-side caching, and accessibility standards.',
+    marketDemand: 'Very High',
+    requiredSkills: [
+      { skillId: 'javascript', targetMastery: 90, importance: 'critical' },
+      { skillId: 'react', targetMastery: 90, importance: 'critical' },
+      { skillId: 'rest-apis', targetMastery: 75, importance: 'important' },
+      { skillId: 'testing', targetMastery: 75, importance: 'important' },
+      { skillId: 'git', targetMastery: 75, importance: 'important' },
+      { skillId: 'data-structures', targetMastery: 60, importance: 'important' },
+      { skillId: 'arrays', targetMastery: 70, importance: 'important' },
+    ],
+  },
+  {
+    id: 'systems-devops',
+    title: 'Systems & Cloud Engineer',
+    description: 'Automates production infrastructure, container orchestration, OS internals, telemetry pipelines, and high-availability operations.',
+    marketDemand: 'Crucial',
+    requiredSkills: [
+      { skillId: 'linux', targetMastery: 85, importance: 'critical' },
+      { skillId: 'git', targetMastery: 85, importance: 'critical' },
+      { skillId: 'python', targetMastery: 75, importance: 'important' },
+      { skillId: 'rest-apis', targetMastery: 75, importance: 'important' },
+      { skillId: 'databases', targetMastery: 75, importance: 'important' },
+      { skillId: 'system-design', targetMastery: 80, importance: 'critical' },
+      { skillId: 'testing', targetMastery: 75, importance: 'important' },
+      { skillId: 'sql', targetMastery: 70, importance: 'nice-to-have' },
+    ],
+  },
+];
+
+export const ROLE_MAP = new Map<string, TargetRole>(
+  TARGET_ROLES.map((r) => [r.id, r])
+);

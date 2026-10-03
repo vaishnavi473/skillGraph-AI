@@ -1,0 +1,6 @@
+{
+  "name": "SkillGraph AI",
+  "description": "Personal skill intelligence platform for CSE students. Evaluates technical mastery, prerequisite graphs, role gaps, and AI-grounded learning roadmaps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
